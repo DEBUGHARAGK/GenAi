@@ -1,0 +1,175 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.4 in,top=0.6 in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{marvosym} % For \phone and \Letter symbols
+\usepackage{fontawesome} % For LinkedIn symbol
+\usepackage{hyperref}    % For clickable links
+\excludecomment{mytest}
+%\usepackage{endfloat}
+%\newenvironment{hiddentest}{\begin{comment}}{\end{comment}}
+%\DeclareDelayedFloat{hiddentest}
+%\begin{figure}
+   %\includegraphics[height=4cm]{photo.jpg}
+%\end{figure}
+\name{SAIPRADEEP BAGGAM} % Your name
+% Your secondary addess (optional)
+% \address{\textbf{Data Engineer}}
+
+%\address{{LinkedIn}: https://www.linkedin.com/in/name/}  % Your phone number and email
+\address{{\faPhone} : +91 7842812810 \\ {\faEnvelope} : peetambarasaipradeep.baggam@gmail.com} 
+\address{{\faLinkedin} : https://www.linkedin.com/in/saipradeep-baggam}\\
+\address{(Notice Period. 2 Months)}
+\address{(AWS DATA ENGINEER - TALEND ETL)}\\
+%\address{{\faGithub} :- https://github.com/name}
+%\DeclareDelayedFloat*{hiddentest}
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Professional Summary}
+
+%{To be associated with a progressive organisation that gives me scope to enrich my skills at congruent to a global level,to learn team dynamics and to work towards the growth of the organisation.}
+%{Software Professional leveraging the technical expertise to solve real-world problems and build innovative solutions to handle data-intensive pipelines teveraging the technical expertise to solve real-world problems and build innovative solutions to handle data-intensive pipelines. Having an overall of 2 years of experience in ETL processing and Pipeline development.}
+{
+ With a robust career spanning 8+ years in the IT industry, I have dedicated 4 years to Talend development and the past 4 years to mastering data engineering within the AWS tech stack in building large-scale and reusable data pipelines and ETL data solutions. My commitment to continuous learning and technological exploration has equipped me with hands-on experience in generative AI, enabling me to craft innovative solutions and re-engineer data pipelines with precision.
+}
+
+
+\end{rSection}
+
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+
+%Programming & Python, Shell scripting, SQL, PySpark.\\
+%Software Tools & Talend Bigdata, Informatica Power Centre, Azure Data Factory, Azure Data Bricks, \\&Azure Data Lake, Hadoop concepts, AWS Redshift, Power BI. \\
+Big Data Technologies & Hadoop, Spark, Hive, Sqoop, PySpark, Spark SQL.\\
+Cloud Platforms & AWS Glue, AWS Lambda, AWS DMS, AWS Athena, AWS SNS, AWS S3
+\\&AWS CloudWatch, Azure Data bricks.\\
+Programming Language & Python, SQL. \\
+Database Systems & Oracle, AWS Redshift, PostgreSQL, AWS Dynamo DB, AWS Aurora, SQLServer.\\
+Orchestration & Event Bridge, Step functions, Airflow, Shell Scripting, TAC.\\
+ETL Tools & Talend Big Data, AWS Glue.\\
+CI CD Technologies & Github Actions, AWS Cloud Formation.\\
+Domain Expertise & Power and Utilities, Banking, Telecommunications.\\
+GEN AI Technologies & Lang chain, AWS Bedrock, Open AI, Anthropic Claude, Prompt Engineering.\\
+Familiar &  Kafka, Spark structured streaming, AWS Kinesis, AWS SQS, GCP ,Azure.
+
+
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Professional Experience}
+
+\item{\bf Lead Data Engineer, Cognizant} \hfill {September, 2019 - Present}
+
+{
+\begin{enumerate}
+\item{\textbf{Project: RAG Based Dynamic Code Generator }}\\
+• Developed an automated \textbf{\textit{Generative AI platform}} platform to dynamically generate, Auto validate Python , Pyspark code based on transformation rules provided in the ETL mapping document ensuring seamless integration with AWS Glue and ETL workflows. \\
+{\bf Tech Stack:} {AWS Bedrock, Anthropic Claude 3.5 Sonnet, AWS API Gateway, AWS OpenSearch, Lambda, AWS S3, AWS Secret Manager, Streamlit , LangChain.}
+
+\item{\textbf{Project: Talend to Glue Jobs Migration }}\\
+• Led an Offshore Team of 2 Data Engineers, 1 QA Analyst.\\
+• Spearheaded the migration of 350 Talend jobs to AWS Glue, achieving approximately \textbf{\textit{\$500K}} in annual savings by optimizing resource allocation with Python Shell for small datasets and Spark jobs for larger datasets.\\
+• Utilized \textbf{AWS Step Functions} to orchestrate the entire process, integrating Event Bridge to trigger Step Functions, which in turn called Lambda functions and triggered the appropriate Glue jobs based on dataset volume, using JSON inputs for \textbf{dynamic execution}. This optimization reduced the number of jobs from \textbf{120 (30 per endpoint) }to just four distinct pipelines, streamlining the workflow and enhancing efficiency.\\
+• Implemented CI/CD using \textbf{CloudFormation} templates and \textbf{GitHub Actions}, automating the creation and validation of AWS resources, including Glue jobs, Log Groups, Secrets Manager, JDBC connections, SNS topics, and S3 bucket which reduced manual effort by \textbf{80\%}.\\ 
+• Streamlined the creation and scheduling of Glue jobs via Glue Triggers, as well as Step Functions and Lambda functions through Event Bridge, significantly enhancing operational efficiency.\\
+• Created reusable pipelines for data extraction from four different Salesforce endpoints 
+  to an S3 data lake, ultimately loading into Redshift.\\
+• Initially, \textbf{300 jobs} were required for data ingestion across diverse databases into individual tables, now this was streamlined to just four distinct pipelines. This overhaul enabled flexible table additions based on user requirements and achieved a \textbf{50\% }increase in flexibility, significantly enhancing efficiency and adaptability.\\
+{\bf Tech Stack:} {Talend BigData,  AWS Glue, AWS Lambda, AWS Cloudformation, GitHub Actions, AWS Redshift, AWS Cloud Watch, SAPHANA, AWS S3, AWS Secret Manager, AWS Event Bridge ,AWS Step Functions}
+
+\item{\textbf{Project: NEM AI PERSISTENCE MODEL }}\\
+• Pioneered the creation of reusable raw ingestion pipelines for SQL Server, PostgreSQL, SAP HANA, and Oracle to S3 data lake, and from S3 data lake to Redshift using Glue. These pipelines, capable of handling full and delta loads with parameterization based on business needs, significantly reduced job creation complexity by \textbf{30\%} and achieved a cost reduction of approximately \textbf{25\%} for the Business. \\
+• Architected ETL pipelines using \textbf{AWS Glue PySpark Jobs} for the ingestion of energy-related data, including market transactions, electric company profiles, and power generation site activities, from external APIs to S3 and Redshift. This full-load pipeline transformed data processing efficiency by \textbf{50\%}, accelerated data ingestion times by \textbf{60\%}, and empowered real-time access to critical energy data.\\
+•	Built quarterly load processes for handling \textbf{140-150 million records per quarter} of energy transactions and contracts data, resulting in a total of approximately \textbf{5.6 to 6 billion records annually} (from 2010 to till date).\\
+•	Designed Slowly Changing Dimension \textbf{(SCD) Type 1 and Type 2 frameworks} for integrated layer Glue jobs, based on data models and mapping documents provided by the data modeler. This implementation increased data accuracy by \textbf{40\%}, improved historical data tracking by \textbf{50\%}, and enhanced analytical insights, leading to more informed and strategic decision-making by capturing both current and historical data changes effectively.\\
+•	Integrated and enriched data based on STT mapping documents, designing two reusable Glue PySpark jobs for SCD Type 1 and SCD Type 2 logic. This approach merged meeting data with geographical and Salesforce information, providing actionable insights into meeting geo-coordinates and leading to a \textbf{30\%} increase in data accuracy.\\ 
+•	Down streamed data was fed into an \textbf{AI persistent model}, enabling the development of \textbf{advanced predictive algorithms}.\\
+•	Mastered the handling of semi-structured nested JSON data by ingesting, unnesting, and storing it in a dedicated data mart for in-depth analytical reporting.\\
+• Engineered a seamless integration between Service Now and Glue job failures, incorporating robust error handling to automatically generate alerts and route incident tickets to the support group in ServiceNow in the event of Glue job failures and this enhancement improved incident response times by \textbf{40\%}, ensuring prompt issue resolution and maintaining high operational standards. \\
+{\bf Tech Stack:} {Talend BigData,  AWS Glue, AWS Lambda, AWS Cloudformation, GitHub Actions, AWS Redshift, AWS Cloud Watch, Salesforce, AWS S3, AWS Secret Manager, AWS Event Bridge, AWS Step Functions.}
+
+\item{\textbf{Project: Energy Velocity}} \\
+• Crafted sophisticated \textbf{25+ data pipelines} to extract wind power data from an API, utilizing \textbf{pagination} techniques to manage large datasets and executing both full and incremental loads into Redshift. \\
+• Managed and implemented distinct glue pipelines for electric vehicle tracking data sourced from SQL Server, PostgreSQL, and SAP HANA, efficiently populating \textbf{100 tables} in Redshift\\
+• Build a near real-time data pipeline using \textbf{AWS DMS} to replicate employee data from Oracle to Redshift, implementing Change Data Capture (CDC) operations to maintain up-to-date synchronization.\\
+• Optimized Spark jobs for performance and scalability using techniques such as partitioning, caching, and parallelization.\\
+• Driving daily status calls with all the stakeholders, walkthrough with production support teams before releases, technical clarification and knowledge sharing sessions.\\
+{\bf Tech Stack:} {Talend BigData,  AWS Glue, AWS Lambda, AWS Cloudformation, GitHub Actions, AWS Redshift, AWS Cloud Watch, SQLServer, AWS S3, AWS Secret Manager, AWS Event Bridge, AWS Step Functions.}
+\end{enumerate}
+\\
+
+\item{\bf Talend Big Data Engineer, Artha Data Solutions } \hfill {September, 2018 - August, 2019}
+
+{
+\begin{enumerate}
+\item{\textbf{Project: Insure Analytics }}\\
+• Assigned with functions of finalizing scope and project prioritization through Requirement Gathering and analysis in collaboration with Business Analysts and users.\\
+• Extensively leveraged the Talend Big Data components for Data Ingestion and Data Curation from several heterogeneous data sources.\\
+• Worked with Data mapping team to understand the source to target mapping rules.\\
+• Developed standards for ETL framework for the ease of reusing similar logic across the board.\\
+• Scheduling and Automation of ETL processes with Talend Administrative Centre (TAC) and monitoring jobs from TAC.\\
+• Responsible for end-to-end unit and integration testing and enhancing processes through automation or improvement tasks.\\
+• Facilitated production releases by timely uploading of implementation plan, deployment guide, release notes, Runbooks.\\
+{\bf Tech Stack:} {SQL Server, AWS S3, Talend Big Data, Redshift, TAC.}
+}
+\end{enumerate}
+\\
+
+\item{\bf ETL Developer, Mahindra Comviva } \hfill {July, 2016 - August, 2018}
+
+{
+\begin{enumerate}
+\item{\textbf{Project: Red Cloud Analytics }}\\
+• Understanding the Business Specifications.\\
+• Identifying the business flows and preparation of Design document.\\
+• Developed complex Talend ETL jobs to migrate the data from flat files to database.\\
+• Worked on the design, development and testing of Talend mappings.\\
+• Migrated the code and Related documents from DEV to QA (UAT) And to Production.\\
+• Involved in QA support, defect resolution.\\
+• Involved in creation of workflows.\\
+• Hands on experience in SQL and ETL Performance tuning, identifying and resolving performance bottlenecks in various levels like targets, sources, mappings and sessions.\\
+• Responsible for understanding business and technical problems addressed by the clients 
+  and propose appropriate solutions.\\
+• Involved in peer and self-review, testing of Mappings in DEV, QA, and Pre-PROD Environments.\\
+• Migrated code to Production, provided KT to supporting team and provided warranty support.\\
+{\bf Tech Stack:} {Oracle, Volt DB, Kafka, Talend Big Data, Flat Files, TAC.}
+}
+\end{enumerate}
+\\
+
+\begin{rSection}{Honors & Awards}
+• Extraordinary Performance and Outstanding Achievement awarded by Cognizant, NextEra 2023.\\
+• Emerging Employee of the Year awarded by Mahindra Comviva 2017.\\
+\end{rSection}
+
+\begin{rSection}{Certifications} \itemsep -1pt {}   
+
+\item AWS Certified Data Engineer Associate
+\item AWS Certified Cloud practitioner
+\item Microsoft Certification: Azure Data Engineer Associate - DP203
+\item DataBricks Certification: Databricks Certified Data Engineer Associate
+
+\end{rSection}
+
+
+\begin{rSection}{Education}
+
+\item{\bf Bachelor of Engineering(Electronics \& Communication Engineering)} \hfill {2010-2014}\\
+Pydah College, JNTUK Affiliated, India, 2014 with 79%.
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+\end{document}
+

@@ -1,3 +1,2 @@
-langchain
-pandas
-openpyxl
+boto3
+awscli
